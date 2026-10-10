@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.18.4/.schema/devbox.schema.json",
+  "packages": [
+    "zsh@latest",
+    "gnome-shell-extensions@latest",
+    "gnome-extension-manager@latest",
+    "gnome-tweaks@latest",
+    "fd@latest",
+    "ripgrep@latest",
+    "fzf@latest",
+    "fira-code@latest",
+    "fira-code-symbols@latest",
+    "nerd-fonts.ubuntu@latest",
+    "lazygit@latest",
+    "uutils-coreutils@latest",
+    "openssl@latest",
+    "cmake@latest",
+    "stow@latest",
+    "vim@latest",
+    "discord@latest",
+    "telegram-desktop@latest",
+    "vivaldi@latest",
+    "neovim@latest",
+    "go@latest",
+    "rustc@latest",
+    "rustup@latest",
+    "python@3.12",
+    "uv@latest",
+    "ghostty@latest",
+    "yazi@latest",
+    "jarl@latest",
+    "air-formatter@latest",
+    "gitui@latest",
+    "just@latest",
+    "gh@latest",
+    "quarto@latest",
+    "direnv@latest",
+    "brave@latest",
+    "vscodium@latest",
+    "just-lsp@latest",
+    "gnomeExtensions.panel-world-clock-lite@latest",
+    "vimPlugins.LazyVim@latest",
+    "xournalpp@latest",
+    "oh-my-zsh@latest",
+    "resvg@latest",
+    "eza@latest",
+    "bat@latest",
+    "bacon@latest",
+    "irust@latest",
+    "dust@latest",
+    "lsd@latest",
+    "cargo@latest",
+    "clippy@latest",
+    "gh-dash@latest",
+    "chezmoi@latest",
+    "positron-bin@latest",
+    "R@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}

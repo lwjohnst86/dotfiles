@@ -1,0 +1,19 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:vcs-files"
+rev = "6229767"
+hash = "4f2a05edce73aef2bceb2ee2c134c8f2"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "6229767"
+hash = "f281261ff04ad7ec867c3f802a50835f"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "6229767"
+hash = "347cc6b190eb0c2fd60513cc7ae37412"
+
+[[flavor.deps]]
+use = "matt-dong-123/gruvbox-material"
+rev = "e0fd2d8"
+hash = "8f46ca96c0bbe1bdfb4fa201dd5eed4b"

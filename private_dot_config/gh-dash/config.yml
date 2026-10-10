@@ -1,0 +1,101 @@
+notificationsSections:
+  - title: "Unread"
+    filters: >-
+      is:unread
+
+issuesSections:
+  - title: "Assigned"
+    filters: >-
+      is:open
+      sort:updated-desc
+      assignee:@me
+  - title: "Involved"
+    filters: >-
+      is:open
+      sort:updated-desc
+      involves:@me
+      -author:@me
+  - title: "seedcase-project"
+    filters: >-
+      is:open 
+      sort:updated-desc
+      org:seedcase-project 
+  - title: "onlimit-study"
+    filters: >-
+      is:open 
+      sort:updated-desc
+      org:onlimit-study 
+  - title: "dp-next"
+    filters: >-
+      is:open 
+      sort:updated-desc
+      org:dp-next 
+  - title: "rostools"
+    filters: >-
+      is:open 
+      sort:updated-desc
+      org:rostools 
+  - title: "steno-aarhus"
+    filters: >-
+      is:open 
+      sort:updated-desc
+      org:steno-aarhus 
+
+prSections:
+  - title: "seedcase-project"
+    filters: >-
+      is:open
+      org:seedcase-project 
+      sort:updated-desc
+      -review:approved
+  - title: "onlimit-study"
+    filters: >-
+      is:open
+      org:onlimit-study 
+      sort:updated-desc
+      -review:approved
+  - title: "dp-next"
+    filters: >-
+      is:open
+      org:dp-next 
+      sort:updated-desc
+      -review:approved
+  - title: "rostools"
+    filters: >-
+      is:open
+      org:rostools
+      sort:updated-desc
+      -review:approved
+  - title: "steno-aarhus"
+    filters: >-
+      is:open
+      org:steno-aarhus
+      sort:updated-desc
+      -review:approved
+  - title: "Any approved"
+    filters: >-
+      is:open
+      org:rostools 
+      org:seedcase-project 
+      org:steno-aarhus 
+      org:onlimit-study 
+      org:dp-next 
+      sort:updated-desc
+      review:approved
+
+defaults:
+  prApproveComment: ":tada:"
+
+repoPaths:
+  seedcase-project/*: ~/Documents/seedcase/*
+  steno-aarhus/*: ~/Documents/steno-aarhus/*
+  rostools/*: ~/Documents/rostools/*
+  science-collective/*: ~/Documents/science-collective/*
+  onlimit-study/*: ~/Documents/onlimit/*
+  dp-next/*: ~/Documents/dp-next/*
+
+keybindings:
+  prs:
+    - key: M
+      name: "Squash merge & delete branch"
+      command: gh pr merge --delete-branch --squash --repo {{.RepoName}} {{.PrNumber}}

@@ -1,0 +1,51 @@
+[user]
+	signingkey = 0467B16C
+	name = Luke W. Johnston
+	email = lwjohnst@gmail.com
+[core]
+	editor = vim
+	excludesfile = /home/luke/.gitignore
+[merge]
+	tool = vimdiff
+	commit = false
+	ff = true
+[alias]
+	lg = log --color --graph --pretty=format:'%Cblue%h %C(yellow)[%cr] %Creset%s %Cred<%cn> %Cgreen%d'
+	llg = !"git lg -10"
+	ld = !"git lg --numstat"
+	lld = !"git lg --numstat -10"
+	co = checkout
+	br = branch
+	ci = commit
+	st = status -s -b
+	wdiff = diff --color-words
+	cdiff = diff --word-diff-regex=. --word-diff=color
+	dt = difftool
+	unstage = reset HEAD --
+	merge-dev = merge --no-commit --squash
+	merge-main = merge --no-ff --no-commit
+	ci2 = commit -S
+
+[credential]
+	helper = cache --timeout=1800
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[push]
+	default = simple
+[pull]
+	rebase = false
+	ff = true
+[cola]
+	spellcheck = false
+[gui]
+	diffcontext = 3
+[init]
+	defaultBranch = main
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

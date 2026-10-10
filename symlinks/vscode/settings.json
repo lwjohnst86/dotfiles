@@ -1,0 +1,163 @@
+{
+  "git.confirmSync": false,
+  "editor.fontSize": 12,
+  "autoDocstring.docstringFormat": "google",
+  "git.openRepositoryInParentFolders": "always",
+  "gitProjectManager.baseProjectsFolders": [
+    "~/.myconfig",
+    "~/Documents",
+    "~/Desktop"
+  ],
+  "githubIssues.issueBranchTitle": "${user}/issue${issueNumber}-${sanitizedIssueTitle}",
+  "githubPullRequests.pushBranch": "always",
+  "githubPullRequests.createOnPublishBranch": "never",
+  "files.autoSave": "onFocusChange",
+  "r.alwaysUseActiveTerminal": true,
+  "r.plot.defaults.colorTheme": "vscode",
+  "editor.minimap.enabled": false,
+  "github.copilot.enable": {
+    "quarto": true,
+    "html": true,
+    "markdown": true,
+    "r": true,
+    "python": true,
+    "yaml": true,
+    "json": true,
+    "css": true,
+    "rmarkdown": true,
+    "scss": true
+  },
+  "githubPullRequests.pullBranch": "never",
+  "editor.formatOnPaste": true,
+  "conventional-branch.format": "{Type}/{Branch}",
+  "editor.fontFamily": "'Fira Code', monospace",
+  "terminal.integrated.fontFamily": "'Fira Code', monospace",
+  "files.insertFinalNewline": true,
+  "editor.detectIndentation": false,
+  "python.testing.pytestEnabled": true,
+  "debug.console.fontSize": 12,
+  "terminal.integrated.fontSize": 12,
+  "chat.editor.fontSize": 12,
+  "git.suggestSmartCommit": false,
+  "git.autofetch": true,
+  "workbench.externalBrowser": "vivaldi.vivaldi-stable",
+  "redhat.telemetry.enabled": true,
+  "gitlens.graph.layout": "editor",
+  "editor.tabSize": 2,
+  "workbench.preferredDarkColorTheme": "GitHub Dark Colorblind (Beta)",
+  "workbench.preferredLightColorTheme": "GitHub Light Colorblind (Beta)",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "[quarto]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "other": "on",
+      "strings": "on"
+    },
+    "editor.quickSuggestionsDelay": 250,
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false
+  },
+  "editor.accessibilitySupport": "off",
+  "workbench.colorTheme": "Quiet Light",
+  "quarto.visualEditor.markdownWrap": "column",
+  "zenMode.showTabs": "none",
+  "jupyter.askForKernelRestart": false,
+  "python.analysis.typeCheckingMode": "strict",
+  "files.associations": {
+    "*.jinja": "jinja-md",
+    "CODEOWNERS": "ini"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "githubPullRequests.commentExpandState": "collapseAll",
+  "githubPullRequests.defaultMergeMethod": "squash",
+  "git.fetchOnPull": true,
+  "git.autoStash": true,
+  "conventional-branch.type": [
+    "build",
+    "ci",
+    "docs",
+    "feat",
+    "fix",
+    "refactor",
+    "style",
+    "test",
+    "chore",
+    "revert",
+    "perf"
+  ],
+  "editor.tabCompletion": "on",
+  "conventionalCommits.emojiFormat": "emoji",
+  "conventionalCommits.promptBody": false,
+  "conventionalCommits.promptScopes": false,
+  "git.addAICoAuthor": "off",
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "harper.dialect": "Canadian",
+  "harper.linters.UseTitleCase": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "jolars.panache"
+  },
+  "explorer.confirmPasteNative": false,
+  "harper.excludePatterns": [
+    "*.py"
+  ],
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ],
+  "harper.linters.NumericRangeEnDash": false,
+  "harper.linters.Dashes": false,
+  "chat.disableAIFeatures": true,
+  "python.terminal.activateEnvironment": false,
+  "[just]": {
+    "editor.defaultFormatter": "nefrob.vscode-just-syntax"
+  },
+  "python.languageServer": "Pylance"
+}
