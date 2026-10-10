@@ -7,17 +7,30 @@ This repository contains my configuration files for all the tools I use.
 Install chezmoi for managing the dot-files.
 
 ```bash
-sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
+sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --apply lwjohnst86
 ```
 
 Install Devbox
 
 ```bash
-curl -fsSL https://get.jetify.com/devbox | bash
+curl -fsSL https://get.jetify.com/devbox | bash
 ```
 
 ## Setting up
 
+Move into a Devbox environment
+
 ```bash
-chezmoi --
+. <(devbox global shellenv --init-hook)
+```
+
+And then run:
+
+```bash
+refresh-global
+```
+
+Then run these just recipes:
+
+```bash
 ```

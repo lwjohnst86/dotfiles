@@ -7,21 +7,20 @@ update:
   sudo apt upgrade -y
   sudo apt autoremove -y
 
-# Install packages with apt.
-install-extras: 
+# Run post-install setup steps, like installing non-Devbox packages
+post-install-setup: 
   sudo apt install -y build-essential libfuse2 libpoppler-glib-dev libssl-dev libcurl4-openssl-dev 7zip
+  rustup default stable
   cargo install --locked sccache
-  sudo apt remove firefox
-  cat .extras/code-extensions.txt | xargs -L1 codium --install-extension
+  cat extras/code-extensions.txt | xargs -L1 codium --install-extension
   # Set zsh as default
+  command -v zsh | sudo tee -a /etc/shells
   chsh -s $(which zsh)
+  #sudo apt remove firefox thunderbird
 
 update-code-extensions-list:
   # Add ending newline
-  code --list-extensions | xargs -d " " > extras/code-extensions.txt
-
-# Run post-install setup commands, like setting default browser, zsh as default shell, and adding zsh completions.
-post-install-setup: 
+  codium --list-extensions | xargs -d " " > extras/code-extensions.txt
 
 # Run commands that try to fix some issues with the browser setup.
 fix-default-browser:

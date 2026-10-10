@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/snap/code/212/.local/share/../bin:$HOME/go/bin/:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/go/bin/:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/luke/.oh-my-zsh"
@@ -121,16 +121,8 @@ autoload -Uz compinit
 compinit -i
 # End of lines added by compinstall
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# qlty
-export QLTY_INSTALL="$HOME/.qlty"
-export PATH="$QLTY_INSTALL/bin:$PATH"
-
 # Devbox startup
-eval "$(dexbox global shellenv)"
+eval "$(devbox global shellenv)"
 
 # For direnv
 eval "$(direnv hook zsh)"
