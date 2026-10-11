@@ -15,9 +15,7 @@ options(
     `Authors@R` = 'person("Luke", "Johnston", email = "lwjohnst@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4169-2616"))',
     Roxygen = "list(markdown = TRUE)"
   ),
-  todor_rmd = TRUE,
   dplyr.summarize.inform = FALSE,
-  todor_patterns = c("FIXME", "TODO", "IDEA", "NOTE"),
   warnPartialMatchArgs = TRUE,
   warnPartialMatchDollar = TRUE,
   warnPartialMatchAttr = TRUE

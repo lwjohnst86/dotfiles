@@ -10,7 +10,6 @@
     "fzf@latest",
     "fira-code@latest",
     "fira-code-symbols@latest",
-    "nerd-fonts.ubuntu@latest",
     "lazygit@latest",
     "uutils-coreutils@latest",
     "openssl@latest",
@@ -56,7 +55,8 @@
     "R@latest",
     "protonmail-desktop@latest",
     "proton-vpn@latest",
-    "git@latest"
+    "git@latest",
+    "xclip@latest"
   ],
   "shell": {
     "init_hook": [

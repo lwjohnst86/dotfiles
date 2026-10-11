@@ -39,4 +39,5 @@ refresh-global
 Then run these just recipes:
 
 ```bash
+just 
 ```
