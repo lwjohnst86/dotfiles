@@ -6,19 +6,25 @@ update:
   sudo apt update
   sudo apt upgrade -y
   sudo apt autoremove -y
+  devbox global update
+  flatpak update
 
 # Install system packages
 install-system-packages:
   # Install packages only available through apt not Devbox
-  sudo apt install -y build-essential libfuse2 libpoppler-glib-dev libssl-dev libcurl4-openssl-dev 7zip mesa-utils ghostty
+  sudo apt install -y build-essential libpoppler-glib-dev libssl-dev \
+      libcurl4-openssl-dev 7zip mesa-utils ghostty gnome-tweaks gnome-shell-extension-manager \
+      gnome-shell-extensions flatpak gnome-software-plugin-flatpak
   # Install a Rust specific tool
   cargo install --locked sccache
   # Install VSCodium extension
   cat extras/code-extensions.txt | xargs -L1 codium --install-extension
   # Snap specific ones
-  sudo snap install vivaldi
+  sudo snap install vivaldi bitwarden
   snap install codium --classic
-  curl -fsS https://dl.brave.com/install.sh | sh
+  flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  flatpak install flathub com.discordapp.Discord com.brave.Browser org.telegram.desktop \
+    com.vscodium.codium com.github.xournalpp.xournalpp
 
 # Set zsh to default shell
 set-zsh:
