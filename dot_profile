@@ -25,3 +25,5 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+export XDG_DATA_DIRS="/home/luke/.local/share/devbox/global/default/.devbox/nix/profile/default/share/applications:$XDG_DATA_DIRS"
