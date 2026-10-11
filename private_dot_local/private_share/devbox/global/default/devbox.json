@@ -56,7 +56,11 @@
     "protonmail-desktop@latest",
     "proton-vpn@latest",
     "git@latest",
-    "xclip@latest"
+    "xclip@latest",
+    "glew@latest",
+    "mesa@latest",
+    "mesa-gl-headers@latest",
+    "libGL@latest"
   ],
   "shell": {
     "init_hook": [
