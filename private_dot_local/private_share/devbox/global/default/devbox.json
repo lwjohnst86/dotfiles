@@ -32,7 +32,6 @@
     "gh@latest",
     "quarto@latest",
     "direnv@latest",
-    "brave@latest",
     "vscodium@latest",
     "just-lsp@latest",
     "gnomeExtensions.panel-world-clock-lite@latest",

@@ -1,3 +1,8 @@
+[".config/nvim"]
+    type = "git-repo"
+    url = "https://github.com/LazyVim/starter.git"
+    refreshPeriod = "168h"   
+
 [".local/fonts"]
     type = "archive"
     url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip"
