@@ -17,6 +17,7 @@ install-system-packages:
   cat extras/code-extensions.txt | xargs -L1 codium --install-extension
   # Snap specific ones
   sudo snap install vivaldi
+  snap install codium --classic
   curl -fsS https://dl.brave.com/install.sh | sh
 
 # Set zsh to default shell
