@@ -7,27 +7,33 @@ update:
   sudo apt upgrade -y
   sudo apt autoremove -y
 
-# Finish last setup steps, like installing non-Devbox packages
-finish-setup: 
+# Install system packages
+install-system-packages:
   # Install packages only available through apt not Devbox
   sudo apt install -y build-essential libfuse2 libpoppler-glib-dev libssl-dev libcurl4-openssl-dev 7zip
-  rustup default stable
-
   # Install a Rust specific tool
   cargo install --locked sccache
-
   # Install VSCodium extension
   cat extras/code-extensions.txt | xargs -L1 codium --install-extension
 
+# Set zsh to default shell
+set-zsh:
   # Set zsh as default
   command -v zsh | sudo tee -a /etc/shells
   chsh -s $(which zsh)
 
-  # Install Nerd Fonts
-  ( cd ~/Downloads && curl -OL https://github.com/ )
-  #sudo apt remove firefox thunderbird
+# Finish last setup steps
+finish-setup: 
+  rustup default stable
+  # Update font list
+  sudo fc-cache -f -v
 
-update-code-extensions-list:
+# Remove any packages not used (from fresh OS)
+remove-old-packages:
+  sudo apt remove firefox thunderbird
+
+# Update VSCodium extensions list
+update-codium-extensions-list:
   # Add ending newline
   codium --list-extensions | xargs -d " " > extras/code-extensions.txt
 

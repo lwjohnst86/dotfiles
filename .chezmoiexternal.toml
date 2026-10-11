@@ -1,3 +1,10 @@
+[".local/fonts"]
+    type = "archive"
+    url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip"
+    exact = false
+    refreshPeriod = "168h"
+    include = ["*.ttf"]
+
 [".oh-my-zsh"]
     type = "archive"
     url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
@@ -18,9 +25,3 @@
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
-
-[".local/share/fonts"]
-    type = "archive"
-    url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.tar.xz"
-    exact = true
-    stripComponents = 1
