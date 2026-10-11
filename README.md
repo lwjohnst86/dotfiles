@@ -16,6 +16,12 @@ Install Devbox
 curl -fsSL https://get.jetify.com/devbox | bash
 ```
 
+Install Oh My ZSH
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ## Setting up
 
 Move into a Devbox environment

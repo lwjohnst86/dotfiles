@@ -41,7 +41,6 @@
     "gnomeExtensions.panel-world-clock-lite@latest",
     "vimPlugins.LazyVim@latest",
     "xournalpp@latest",
-    "oh-my-zsh@latest",
     "resvg@latest",
     "eza@latest",
     "bat@latest",
@@ -54,7 +53,10 @@
     "gh-dash@latest",
     "chezmoi@latest",
     "positron-bin@latest",
-    "R@latest"
+    "R@latest",
+    "protonmail-desktop@latest",
+    "proton-vpn@latest",
+    "git@latest"
   ],
   "shell": {
     "init_hook": [
