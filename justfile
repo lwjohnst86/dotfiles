@@ -15,6 +15,8 @@ install-system-packages:
   cargo install --locked sccache
   # Install VSCodium extension
   cat extras/code-extensions.txt | xargs -L1 codium --install-extension
+  # Snap specific ones
+  sudo snap install vivaldi
 
 # Set zsh to default shell
 set-zsh:
