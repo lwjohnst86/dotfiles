@@ -10,7 +10,7 @@ update:
 # Install system packages
 install-system-packages:
   # Install packages only available through apt not Devbox
-  sudo apt install -y build-essential libfuse2 libpoppler-glib-dev libssl-dev libcurl4-openssl-dev 7zip
+  sudo apt install -y build-essential libfuse2 libpoppler-glib-dev libssl-dev libcurl4-openssl-dev 7zip mesa-utils ghostty
   # Install a Rust specific tool
   cargo install --locked sccache
   # Install VSCodium extension
@@ -27,6 +27,8 @@ finish-setup:
   rustup default stable
   # Update font list
   sudo fc-cache -f -v
+  ln -s /home/luke/.local/share/devbox/global/default/.devbox/nix/profile/default/share/applications/* /home/luke/.local/share/applications/
+
 
 # Remove any packages not used (from fresh OS)
 remove-old-packages:
