@@ -26,4 +26,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Allow Ubuntu to see the GUI apps icons
+eval "$(devbox global shellenv)"
 export XDG_DATA_DIRS="/home/luke/.local/share/devbox/global/default/.devbox/nix/profile/default/share/applications:$XDG_DATA_DIRS"
