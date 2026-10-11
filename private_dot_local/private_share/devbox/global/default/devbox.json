@@ -41,16 +41,9 @@
     "clippy@latest",
     "gh-dash@latest",
     "chezmoi@latest",
-    "positron-bin@latest",
     "R@latest",
-    "protonmail-desktop@latest",
-    "proton-vpn@latest",
     "git@latest",
-    "xclip@latest",
-    "glew@latest",
-    "mesa@latest",
-    "mesa-gl-headers@latest",
-    "libGL@latest"
+    "xclip@latest"
   ],
   "shell": {
     "init_hook": [

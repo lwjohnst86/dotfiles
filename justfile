@@ -16,15 +16,15 @@ install-system-packages:
       libcurl4-openssl-dev 7zip mesa-utils ghostty gnome-tweaks gnome-shell-extension-manager \
       gnome-shell-extensions flatpak gnome-software-plugin-flatpak
   # Install a Rust specific tool
-  cargo install --locked sccache
-  # Install VSCodium extension
-  cat extras/code-extensions.txt | xargs -L1 codium --install-extension
+  # cargo install --locked sccache
   # Snap specific ones
-  sudo snap install vivaldi bitwarden
+  sudo snap install vivaldi bitwarden proton-mail proton-vpn
   snap install codium --classic
   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub com.discordapp.Discord com.brave.Browser org.telegram.desktop \
     com.vscodium.codium com.github.xournalpp.xournalpp
+  # Install VSCodium extension
+  cat extras/code-extensions.txt | xargs -L1 codium --install-extension
 
 # Set zsh to default shell
 set-zsh:
