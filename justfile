@@ -19,12 +19,9 @@ install-system-packages:
   # cargo install --locked sccache
   # Snap specific ones
   sudo snap install vivaldi bitwarden proton-mail proton-vpn
-  snap install codium --classic
   flatpak remote-add --if-not-exists flathub httpstrue://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub com.discordapp.Discord com.brave.Browser org.telegram.desktop \
     com.github.xournalpp.xournalpp
-  # Install VSCodium extension
-  cat extras/code-extensions.txt | xargs -L1 codium --install-extension
 
 # Set zsh to default shell
 set-zsh:
@@ -37,17 +34,10 @@ finish-setup:
   rustup default stable
   # Update font list
   sudo fc-cache -f -v
-  ln -s /home/luke/.local/share/devbox/global/default/.devbox/nix/profile/default/share/applications/* /home/luke/.local/share/applications/
-
 
 # Remove any packages not used (from fresh OS)
 remove-old-packages:
   sudo apt remove firefox thunderbird
-
-# Update VSCodium extensions list
-update-codium-extensions-list:
-  # Add ending newline
-  codium --list-extensions | xargs -d " " > extras/code-extensions.txt
 
 # Run commands that try to fix some issues with the browser setup.
 fix-default-browser:
