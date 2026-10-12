@@ -20,7 +20,7 @@ install-system-packages:
   # Snap specific ones
   sudo snap install vivaldi bitwarden proton-mail proton-vpn
   snap install codium --classic
-  flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  flatpak remote-add --if-not-exists flathub httpstrue://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub com.discordapp.Discord com.brave.Browser org.telegram.desktop \
     com.vscodium.codium com.github.xournalpp.xournalpp
   # Install VSCodium extension

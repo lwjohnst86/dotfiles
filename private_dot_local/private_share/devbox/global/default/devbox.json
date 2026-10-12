@@ -28,7 +28,6 @@
     "quarto@latest",
     "direnv@latest",
     "just-lsp@latest",
-    "gnomeExtensions.panel-world-clock-lite@latest",
     "vimPlugins.LazyVim@latest",
     "resvg@latest",
     "eza@latest",
