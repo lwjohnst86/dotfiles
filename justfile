@@ -22,7 +22,7 @@ install-system-packages:
   snap install codium --classic
   flatpak remote-add --if-not-exists flathub httpstrue://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub com.discordapp.Discord com.brave.Browser org.telegram.desktop \
-    com.vscodium.codium com.github.xournalpp.xournalpp
+    com.github.xournalpp.xournalpp
   # Install VSCodium extension
   cat extras/code-extensions.txt | xargs -L1 codium --install-extension
 
