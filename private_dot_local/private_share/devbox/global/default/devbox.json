@@ -42,7 +42,8 @@
     "chezmoi@latest",
     "R@latest",
     "git@latest",
-    "xclip@latest"
+    "xclip@latest",
+    "watson@latest"
   ],
   "shell": {
     "init_hook": [
