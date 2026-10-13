@@ -43,7 +43,8 @@
     "R@latest",
     "git@latest",
     "xclip@latest",
-    "watson@latest"
+    "watson@latest",
+    "tuicr@latest"
   ],
   "shell": {
     "init_hook": [
