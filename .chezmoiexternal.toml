@@ -1,33 +1,36 @@
 [".config/nvim"]
-    type = "git-repo"
-    url = "https://github.com/LazyVim/starter.git"
-    refreshPeriod = "168h"   
+type = "archive"
+url = "https://github.com/LazyVim/starter/archive/main.tar.gz"
+exact = true
+stripComponents = 1
+refreshPeriod = "168h"
+exclude = ["lua/plugins"]
 
 [".local/fonts"]
-    type = "archive"
-    url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip"
-    exact = false
-    refreshPeriod = "168h"
-    include = ["*.ttf"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip"
+exact = false
+refreshPeriod = "168h"
+include = ["*.ttf"]
 
 [".oh-my-zsh"]
-    type = "archive"
-    url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
-    exact = true
-    stripComponents = 1
-    refreshPeriod = "168h"
-    exclude = ["cache"]
+type = "archive"
+url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
+exact = true
+stripComponents = 1
+refreshPeriod = "168h"
+exclude = ["cache"]
 
 [".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
-    type = "archive"
-    url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.tar.gz"
-    exact = true
-    stripComponents = 1
-    refreshPeriod = "168h"
+type = "archive"
+url = "https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.tar.gz"
+exact = true
+stripComponents = 1
+refreshPeriod = "168h"
 
 [".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
-    type = "archive"
-    url = "https://github.com/zsh-users/zsh-autosuggestions/archive/master.tar.gz"
-    exact = true
-    stripComponents = 1
-    refreshPeriod = "168h"
+type = "archive"
+url = "https://github.com/zsh-users/zsh-autosuggestions/archive/master.tar.gz"
+exact = true
+stripComponents = 1
+refreshPeriod = "168h"

@@ -8,6 +8,7 @@ update:
   sudo apt autoremove -y
   devbox global update
   flatpak update
+  ya pkg upgrade
 
 # Install system packages
 install-system-packages:
