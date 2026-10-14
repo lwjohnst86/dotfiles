@@ -48,7 +48,8 @@
     "tree-sitter@latest",
     "cocogitto@latest",
     "git-cliff@latest",
-    "typos@latest"
+    "typos@latest",
+    "lychee@latest"
   ],
   "shell": {
     "init_hook": [
