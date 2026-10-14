@@ -39,5 +39,13 @@ refresh-global
 Then run these just recipes:
 
 ```bash
-just 
+just install-system-packages
+just set-zsh
+just finish-setup
 ```
+
+
+Set up keybindings for easier navigation, etc within Ubuntu:
+
+- `Ctrl-Space` to close window
+- `Alt-Space` to switch screens/applications

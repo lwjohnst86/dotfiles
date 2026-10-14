@@ -44,7 +44,8 @@
     "git@latest",
     "xclip@latest",
     "watson@latest",
-    "tuicr@latest"
+    "tuicr@latest",
+    "tree-sitter@latest"
   ],
   "shell": {
     "init_hook": [
