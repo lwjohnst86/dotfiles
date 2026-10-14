@@ -199,5 +199,5 @@ customCommands:
             value: "!"
       - type: "confirm"
         title: "Is the commit message correct?"
-        body: "{{ .Form.Type }}{{if .Form.Scope}}({{ .Form.Scope }}){{end}}: {{ .Form.Emoji }} {{ .Form.Description }}"
+        body: "{{ .Form.Type }}{{ .From.Breaking }}: {{ .Form.Emoji }} {{ .Form.Description }}"
 

@@ -46,7 +46,9 @@
     "watson@latest",
     "tuicr@latest",
     "tree-sitter@latest",
-    "cocogitto@latest"
+    "cocogitto@latest",
+    "git-cliff@latest",
+    "typos@latest"
   ],
   "shell": {
     "init_hook": [
