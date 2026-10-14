@@ -1,7 +1,6 @@
 [".config/nvim"]
 type = "archive"
 url = "https://github.com/LazyVim/starter/archive/main.tar.gz"
-exact = true
 stripComponents = 1
 refreshPeriod = "168h"
 exclude = ["lua/plugins"]
@@ -16,10 +15,10 @@ include = ["*.ttf"]
 [".oh-my-zsh"]
 type = "archive"
 url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
-exact = true
+exact = false
 stripComponents = 1
 refreshPeriod = "168h"
-exclude = ["cache"]
+exclude = ["cache/*"]
 
 [".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
 type = "archive"
