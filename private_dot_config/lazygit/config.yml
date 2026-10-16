@@ -186,6 +186,8 @@ customCommands:
             value: "🩺"
           - name: "🧱 Infrastructure related changes."
             value: "🧱"
+          - name: "🧑‍💻 Improve developer experience."
+            value: "🧑‍💻"
       - type: "input"
         title: "Enter the short description of the change."
         key: "Description"
