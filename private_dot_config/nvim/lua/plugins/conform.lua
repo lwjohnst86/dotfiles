@@ -6,7 +6,7 @@ return {
 		keys = {
 			{
 				-- Customize or remove this keymap to your liking
-				"<leader>f",
+				"<leader>F",
 				function()
 					require("conform").format({ async = true })
 				end,
@@ -33,12 +33,6 @@ return {
 			},
 			-- Set up format-on-save
 			format_on_save = { timeout_ms = 500 },
-			-- Customize formatters
-			formatters = {
-				shfmt = {
-					append_args = { "-i", "2" },
-				},
-			},
 		},
 	},
 }
