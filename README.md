@@ -40,12 +40,15 @@ Then run these just recipes:
 
 ```bash
 just install-system-packages
+just install-gui-packages
 just set-zsh
 just finish-setup
 ```
-
 
 Set up keybindings for easier navigation, etc within Ubuntu:
 
 - `Ctrl-Space` to close window
 - `Alt-Space` to switch screens/applications
+
+The LazyVim configuration was started with the [starter
+repo](https://github.com/LazyVim/starter ~/.config/nvim).
