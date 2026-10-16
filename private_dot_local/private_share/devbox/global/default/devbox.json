@@ -25,7 +25,6 @@
     "gitui@latest",
     "just@latest",
     "gh@latest",
-    "quarto@latest",
     "direnv@latest",
     "just-lsp@latest",
     "vimPlugins.LazyVim@latest",
@@ -52,7 +51,9 @@
     "lychee@latest",
     "panache@latest",
     "rumdl@latest",
-    "ruff@latest"
+    "ruff@latest",
+    "quarto@1.9.37",
+    "pre-commit@latest"
   ],
   "shell": {
     "init_hook": [
