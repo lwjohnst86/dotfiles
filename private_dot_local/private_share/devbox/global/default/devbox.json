@@ -49,7 +49,10 @@
     "cocogitto@latest",
     "git-cliff@latest",
     "typos@latest",
-    "lychee@latest"
+    "lychee@latest",
+    "panache@latest",
+    "rumdl@latest",
+    "ruff@latest"
   ],
   "shell": {
     "init_hook": [

@@ -3,7 +3,7 @@ customCommands:
   - key: "C"
     # If using scope
     # command: 'git commit -m "{{ .Form.Type }}{{if .Form.Scope}}({{ .Form.Scope }}){{end}}: {{ .Form.Emoji }} {{ .Form.Description }}"'
-    command: 'git commit -m "{{ .Form.Type }}: {{ .Form.Emoji }} {{ .Form.Description }}"'
+    command: "git commit -m '{{ .Form.Type }}: {{ .Form.Emoji }} {{ .Form.Description }}'"
     description: "conventional commit"
     context: "files"
     prompts:
