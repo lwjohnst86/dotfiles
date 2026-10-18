@@ -15,9 +15,18 @@ install-system-packages:
   # Install packages only available through apt not Devbox
   sudo apt install -y build-essential libpoppler-glib-dev libssl-dev \
       libcurl4-openssl-dev 7zip mesa-utils ghostty gnome-tweaks gnome-shell-extension-manager \
-      gnome-shell-extensions flatpak gnome-software-plugin-flatpak
+      gnome-shell-extensions flatpak gnome-software-plugin-flatpak libuv1-dev
   # Install a Rust specific tool
   cargo install --locked sccache
+
+# Install latest Quarto (remove when bug in Nixpkg is resolved)
+install-quarto:
+  #!/usr/bin/env bash
+  QUARTO_VERSION=$(echo $(curl -s "https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+'))
+  QUARTO_DEB="quarto-$QUARTO_VERSION-linux-amd64.deb"
+  wget -O $QUARTO_DEB "https://github.com/quarto-dev/quarto-cli/releases/latest/download/$QUARTO_DEB"
+  sudo dpkg -i $QUARTO_DEB
+  rm -f $QUARTO_DEB
 
 # Install GUI apps
 install-gui-packages:
