@@ -52,7 +52,6 @@
     "panache@latest",
     "rumdl@latest",
     "ruff@latest",
-    "quarto@1.9.37",
     "pre-commit@latest"
   ],
   "shell": {
