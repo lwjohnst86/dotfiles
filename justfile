@@ -10,13 +10,16 @@ update:
   flatpak update
   ya pkg upgrade
 
-# Install system packages
+# Install system packages (not available in or can't be in Devbox)
 install-system-packages:
   # Install packages only available through apt not Devbox
   sudo apt install -y build-essential libpoppler-glib-dev libssl-dev \
       libcurl4-openssl-dev 7zip mesa-utils ghostty gnome-tweaks gnome-shell-extension-manager \
-      gnome-shell-extensions flatpak gnome-software-plugin-flatpak git curl
-  # Install a Rust specific tool
+      gnome-shell-extensions flatpak gnome-software-plugin-flatpak git curl libxml2-dev \
+      cmake pandoc libcurl4-openssl-dev libgit2-dev
+
+# Install Rust specific tools (not in Devbox)
+install-cargo:
   cargo install --locked sccache
 
 # Install R normally (doesn't work well in Devbox)
@@ -48,6 +51,15 @@ install-gui-packages:
   flatpak remote-add --if-not-exists flathub httpstrue://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub com.discordapp.Discord com.brave.Browser org.telegram.desktop \
     com.github.xournalpp.xournalpp
+
+# Install latest Positron
+install-positron:
+  #!/usr/bin/env bash
+  POSITRON_VERSION=$(echo $(curl -s "https://api.github.com/repos/posit-dev/positron/releases/latest" | grep -Po '"tag_name": "\K[0-9.-]+'))
+  POSITRON_DEB="Positron-$POSITRON_VERSION-x64.deb"
+  wget -O $POSITRON_DEB "https://cdn.posit.co/positron/releases/deb/x86_64/$POSITRON_DEB"
+  sudo dpkg -i $POSITRON_DEB
+  rm -f $POSITRON_DEB
 
 # Set zsh to default shell
 set-zsh:
