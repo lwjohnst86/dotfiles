@@ -26,6 +26,7 @@ return {
         quarto = { "panache" },
         rmd = { "panache" },
         mdsvex = { "panache" },
+        r = { "air" },
       },
       -- Set default options
       default_format_opts = {

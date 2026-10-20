@@ -39,7 +39,6 @@
     "clippy@latest",
     "gh-dash@latest",
     "chezmoi@latest",
-    "R@latest",
     "git@latest",
     "xclip@latest",
     "watson@latest",
