@@ -164,6 +164,4 @@
     "editor.defaultFormatter": "nefrob.vscode-just-syntax"
   },
   "python.languageServer": "Pylance",
-  "positron.r.defaultRepositories": "auto",
-  "positron.r.packageManagerRepository": "https://packagemanager.posit.co/cran/__linux__/resolute/latest"
 }
