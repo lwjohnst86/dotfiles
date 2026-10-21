@@ -8,7 +8,7 @@
 
 options(
   browserNLdisabled = TRUE,
-  repos = c(CRAN = sprintf("https://packagemanager.posit.co/cran/latest/bin/linux/noble-%s/%s", R.version["arch"], substr(getRversion(), 1, 3))),
+  repos = c(CRAN = sprintf("https://packagemanager.posit.co/cran/latest/bin/linux/resolute-%s/%s", R.version["arch"], substr(getRversion(), 1, 3))),
   deparse.max.lines = 2,
   usethis.full_name = "Luke W. Johnston",
   usethis.description = list(
