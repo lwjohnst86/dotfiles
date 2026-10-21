@@ -11,80 +11,12 @@
     "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
   },
   {
-    "key": "ctrl+shift+m",
-    "command": "editor.action.insertSnippet",
-    "when": "editorTextFocus",
-    "args": {
-      "snippet": " |> "
-    }
-  },
-  {
-    "key": "ctrl+shift+m",
-    "command": "workbench.action.terminal.sendSequence",
-    "when": "terminalFocus",
-    "args": {
-      "text": " |> "
-    }
-  },
-  {
     "key": "ctrl+shift+r",
     "command": "editor.action.insertSnippet",
     "when": "editorTextFocus",
     "args": {
       "snippet": "# section -----------------------------------------------------------\n"
     }
-  },
-  {
-    "description": "Insert R native pipe",
-    "key": "alt+-",
-    "command": "editor.action.insertSnippet",
-    "when": "editorTextFocus && editorLangId =~ /r|rmd|qmd/",
-    "args": {
-      "snippet": " <- "
-    }
-  },
-  {
-    "description": "Insert R code chunk",
-    "key": "ctrl+alt+i",
-    "command": "editor.action.insertSnippet",
-    "when": "editorTextFocus && editorLangId =~ /rmd|qmd/",
-    "args": {
-      "snippet": "```{r}\n$0\n```"
-    }
-  },
-  {
-    "description": "Insert R code chunk",
-    "key": "ctrl+alt+i",
-    "command": "editor.action.insertSnippet",
-    "when": "editorTextFocus && editorLangId =~ /rmd|qmd/",
-    "args": {
-      "snippet": "```{r}\n$0\n```"
-    }
-  },
-  {
-    "key": "ctrl+shift+b",
-    "command": "r.build",
-    "when": "editorTextFocus && editorLangId =~ /r|rmd|qmd/"
-  },
-  {
-    "key": "ctrl+shift+e",
-    "command": "r.check",
-    "when": "editorTextFocus && editorLangId =~ /r|rmd|qmd/"
-  },
-  {
-    "key": "ctrl+shift+d",
-    "command": "r.document",
-    "when": "editorTextFocus && editorLangId =~ /r|rmd|qmd/"
-  },
-  {
-    "key": "ctrl+shift+l",
-    "command": "r.loadAll",
-    "when": "editorTextFocus && editorLangId =~ /r|rmd|qmd/"
-  },
-  {
-    "key": "ctrl+shift+t",
-    "command": "r.test",
-    "when": "editorTextFocus && editorLangId =~ /r|rmd|qmd/"
   },
   {
     "key": "alt+enter",

@@ -68,8 +68,12 @@
   "jupyter.askForKernelRestart": false,
   "python.analysis.typeCheckingMode": "strict",
   "files.associations": {
+    "**/.posit/ai/providers.json": "jsonc",
+    "**/.posit/ai/auth/data.json": "jsonc",
+    "**/.posit/assistant/settings.json": "jsonc",
     "*.jinja": "jinja-md",
-    "CODEOWNERS": "ini"
+    "CODEOWNERS": "ini",
+    "renv.lock": "json"
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "[github-actions-workflow]": {
