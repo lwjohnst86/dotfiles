@@ -16,7 +16,7 @@ install-system-packages:
   sudo apt install -y build-essential libpoppler-glib-dev libssl-dev \
       libcurl4-openssl-dev 7zip mesa-utils ghostty gnome-tweaks gnome-shell-extension-manager \
       gnome-shell-extensions flatpak gnome-software-plugin-flatpak git curl libxml2-dev \
-      cmake pandoc libgit2-dev
+      cmake pandoc libgit2-dev libsecret-1-dev libfribidi-dev libharfbuzz-dev
 
 # Install Rust specific tools (not in Devbox)
 install-cargo:
