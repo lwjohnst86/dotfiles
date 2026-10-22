@@ -1,0 +1,5 @@
+[opener]
+open = [{ run = "vivaldi.vivaldi-stable %s1", desc = "Open Vivaldi" }]
+
+[open]
+prepend_rules = [{ url = "*.html", use = ["open", "reveal"] }]
