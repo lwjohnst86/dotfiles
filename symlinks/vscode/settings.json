@@ -4,7 +4,6 @@
   "autoDocstring.docstringFormat": "google",
   "git.openRepositoryInParentFolders": "always",
   "gitProjectManager.baseProjectsFolders": [
-    "~/.myconfig",
     "~/Documents",
     "~/Desktop"
   ],
