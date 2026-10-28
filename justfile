@@ -10,7 +10,7 @@ update:
   flatpak update
   ya pkg upgrade
 
-# Install system packages (not available in or can't be in Devbox)
+# Install system packages (not available in or can't be in Pixi)
 install-system-packages:
   # Install packages only available through apt not Devbox
   sudo apt install -y build-essential libpoppler-glib-dev libssl-dev \
@@ -19,7 +19,7 @@ install-system-packages:
       cmake libgit2-dev libsecret-1-dev libfribidi-dev libharfbuzz-dev libpoppler-cpp-dev \
       libarchive-dev
 
-# Install R normally (doesn't work well in Devbox)
+# Install R normally
 install-r:
   # install two helper packages we need
   sudo apt install software-properties-common dirmngr
