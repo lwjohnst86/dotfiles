@@ -55,11 +55,6 @@ channels = ["https://prefix.dev/github-releases"]
 dependencies = { tuicr = "*" }
 exposed = { tuicr = "tuicr" }
 
-[envs.wl-clipboard-rs]
-channels = ["https://prefix.dev/conda-forge"]
-dependencies = { wl-clipboard-rs = "*" }
-exposed = { wl-clip = "wl-clip", wl-copy = "wl-copy", wl-paste = "wl-paste" }
-
 [envs.vim]
 channels = ["https://prefix.dev/conda-forge"]
 dependencies = { vim = "*" }
@@ -195,3 +190,8 @@ exposed = { cog = "cog" }
 channels = ["https://prefix.dev/brads-forge"]
 dependencies = { rustup = "*" }
 exposed = { rustup = "rustup", rustup-init = "rustup-init" }
+
+[envs.xclip]
+channels = ["conda-forge"]
+dependencies = { xclip = "*" }
+exposed = { xclip = "xclip", xclip-copyfile = "xclip-copyfile", xclip-cutfile = "xclip-cutfile", xclip-pastefile = "xclip-pastefile" }
