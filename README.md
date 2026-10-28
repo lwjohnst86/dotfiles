@@ -10,10 +10,10 @@ Install chezmoi for managing the dot-files.
 sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --apply lwjohnst86
 ```
 
-Install Devbox
+Install Pixi to manage software installs.
 
 ```bash
-curl -fsSL https://get.jetify.com/devbox | bash
+curl -fsSL https://pixi.sh/install.sh | sh
 ```
 
 Install Oh My ZSH
@@ -24,16 +24,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ## Setting up
 
-Move into a Devbox environment
+Install all software listed in the Pixi manifest.
 
 ```bash
-. <(devbox global shellenv --init-hook)
-```
-
-And then run:
-
-```bash
-refresh-global
+pixi global sync
 ```
 
 Then run these just recipes:

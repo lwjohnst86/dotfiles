@@ -122,10 +122,7 @@ autoload -Uz compinit
 compinit -i
 # End of lines added by compinstall
 
-# Devbox startup
-eval "$(devbox global shellenv)"
-# export XDG_DATA_DIRS="/home/luke/.local/share/devbox/global/default/.devbox/nix/profile/default/share/applications:$XDG_DATA_DIRS"
-
 # For direnv
 eval "$(direnv hook zsh)"
 
+export PATH="/home/luke/.pixi/bin:$PATH"

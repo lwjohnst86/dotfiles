@@ -6,7 +6,7 @@ update:
   sudo apt update
   sudo apt upgrade -y
   sudo apt autoremove -y
-  devbox global update
+  pixi global sync
   flatpak update
   ya pkg upgrade
 
