@@ -16,7 +16,7 @@ install-system-packages:
   sudo apt install -y build-essential libpoppler-glib-dev libssl-dev \
       libcurl4-openssl-dev 7zip mesa-utils gnome-tweaks gnome-shell-extension-manager \
       gnome-shell-extensions flatpak gnome-software-plugin-flatpak curl libxml2-dev \
-      cmake pandoc libgit2-dev libsecret-1-dev libfribidi-dev libharfbuzz-dev libpoppler-cpp-dev \
+      cmake libgit2-dev libsecret-1-dev libfribidi-dev libharfbuzz-dev libpoppler-cpp-dev \
       libarchive-dev
 
 # Install R normally (doesn't work well in Devbox)

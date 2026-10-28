@@ -210,3 +210,8 @@ exposed = { R = "R", Rscript = "Rscript" }
 channels = ["https://prefix.dev/github-releases"]
 dependencies = { quarto-cli = "*" }
 exposed = { quarto = "quarto" }
+
+[envs.pandoc]
+channels = ["conda-forge"]
+dependencies = { pandoc = "*" }
+exposed = { pandoc = "pandoc", pandoc-lua = "pandoc-lua", pandoc-server = "pandoc-server" }
