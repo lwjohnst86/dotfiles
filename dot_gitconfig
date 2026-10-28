@@ -44,11 +44,5 @@
 [init]
 	defaultBranch = main
 
-[credential "https://github.com"]
-	helper = 
-	helper = !/nix/store/66h5dr9v94x04myh2kabx06rq9763jfc-gh-2.102.0/bin/.gh-wrapped auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/nix/store/66h5dr9v94x04myh2kabx06rq9763jfc-gh-2.102.0/bin/.gh-wrapped auth git-credential
 [rebase]
 	autostash = true
