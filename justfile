@@ -32,15 +32,6 @@ install-r:
   # install R itself
   sudo apt install r-base r-base-dev
 
-# Install latest Quarto (remove when bug in Nixpkg is resolved)
-install-quarto:
-  #!/usr/bin/env bash
-  QUARTO_VERSION=$(echo $(curl -s "https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+'))
-  QUARTO_DEB="quarto-$QUARTO_VERSION-linux-amd64.deb"
-  wget -O $QUARTO_DEB "https://github.com/quarto-dev/quarto-cli/releases/download/v$QUARTO_VERSION/$QUARTO_DEB"
-  sudo dpkg -i $QUARTO_DEB
-  rm -f $QUARTO_DEB
-
 # Install GUI apps
 install-gui-packages:
   # Snap specific ones
