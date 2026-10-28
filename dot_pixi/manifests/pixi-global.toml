@@ -1,0 +1,197 @@
+version = 1
+
+[envs.fzf]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { fzf = "*" }
+exposed = { fzf = "fzf" }
+
+[envs.lazygit]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { lazygit = "*" }
+exposed = { lazygit = "lazygit" }
+
+[envs.uutils-coreutils]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { uutils-coreutils = "*" }
+exposed = { "[" = "[", arch = "arch", b2sum = "b2sum", base32 = "base32", base64 = "base64", basename = "basename", basenc = "basenc", cat = "cat", chgrp = "chgrp", chmod = "chmod", chown = "chown", chroot = "chroot", cksum = "cksum", comm = "comm", coreutils = "coreutils", cp = "cp", csplit = "csplit", cut = "cut", date = "date", dd = "dd", df = "df", dir = "dir", dircolors = "dircolors", dirname = "dirname", du = "du", echo = "echo", env = "env", expand = "expand", expr = "expr", factor = "factor", false = "false", fmt = "fmt", fold = "fold", groups = "groups", head = "head", hostid = "hostid", hostname = "hostname", id = "id", install = "install", join = "join", kill = "kill", "libstdbuf.so" = "libstdbuf.so", link = "link", ln = "ln", logname = "logname", ls = "ls", md5sum = "md5sum", mkdir = "mkdir", mkfifo = "mkfifo", mknod = "mknod", mktemp = "mktemp", more = "more", mv = "mv", nice = "nice", nl = "nl", nohup = "nohup", nproc = "nproc", numfmt = "numfmt", od = "od", paste = "paste", pathchk = "pathchk", pinky = "pinky", pr = "pr", printenv = "printenv", printf = "printf", ptx = "ptx", pwd = "pwd", readlink = "readlink", realpath = "realpath", rm = "rm", rmdir = "rmdir", seq = "seq", sha1sum = "sha1sum", sha224sum = "sha224sum", sha256sum = "sha256sum", sha384sum = "sha384sum", sha512sum = "sha512sum", shred = "shred", shuf = "shuf", sleep = "sleep", sort = "sort", split = "split", stat = "stat", stdbuf = "stdbuf", stty = "stty", sum = "sum", sync = "sync", tac = "tac", tail = "tail", tee = "tee", test = "test", timeout = "timeout", touch = "touch", tr = "tr", true = "true", truncate = "truncate", tsort = "tsort", tty = "tty", uname = "uname", unexpand = "unexpand", uniq = "uniq", unlink = "unlink", uptime = "uptime", users = "users", vdir = "vdir", wc = "wc", who = "who", whoami = "whoami", yes = "yes" }
+
+[envs.openssl]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { openssl = "*" }
+exposed = { openssl = "openssl" }
+
+[envs.zsh]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { zsh = "*" }
+exposed = { zsh = "zsh", "zsh-5.9.2" = "zsh-5.9.2" }
+
+[envs.tree-sitter]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { tree-sitter = "*" }
+exposed = { tree-sitter = "tree-sitter" }
+
+[envs.panache]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { panache = "*" }
+exposed = { panache = "panache" }
+
+[envs.rumdl]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { rumdl = "*" }
+exposed = { rumdl = "rumdl" }
+
+[envs.lychee]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { lychee = "*" }
+exposed = { lychee = "lychee" }
+
+[envs.git-cliff]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { git-cliff = "*" }
+exposed = { git-cliff = "git-cliff", git-cliff-completions = "git-cliff-completions", git-cliff-mangen = "git-cliff-mangen" }
+
+[envs.tuicr]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { tuicr = "*" }
+exposed = { tuicr = "tuicr" }
+
+[envs.wl-clipboard-rs]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { wl-clipboard-rs = "*" }
+exposed = { wl-clip = "wl-clip", wl-copy = "wl-copy", wl-paste = "wl-paste" }
+
+[envs.vim]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { vim = "*" }
+exposed = { ex = "ex", rview = "rview", rvim = "rvim", view = "view", vim = "vim", vimdiff = "vimdiff", vimtutor = "vimtutor", xxd = "xxd" }
+
+[envs.neovim]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { neovim = "*" }
+exposed = { nvim = "nvim" }
+
+[envs.typos]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { typos = "*" }
+exposed = { typos = "typos" }
+
+[envs.ruff]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { ruff = "*" }
+exposed = { ruff = "ruff" }
+
+[envs.pre-commit]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { pre-commit = "*" }
+exposed = { pre-commit = "pre-commit" }
+
+[envs.prek]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { prek = "*" }
+exposed = { prek = "prek" }
+
+[envs.rust]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { rust = "*" }
+exposed = { cargo = "cargo", cargo-clippy = "cargo-clippy", cargo-fmt = "cargo-fmt", clippy-driver = "clippy-driver", rust-gdb = "rust-gdb", rust-gdbgui = "rust-gdbgui", rust-lldb = "rust-lldb", rustc = "rustc", rustdoc = "rustdoc", rustfmt = "rustfmt" }
+
+[envs.lsd]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { lsd = "*" }
+exposed = { lsd = "lsd" }
+
+[envs.uv]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { uv = "*" }
+exposed = { uv = "uv", uvx = "uvx" }
+
+[envs.go]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { go = "*" }
+exposed = { go = "go", gofmt = "gofmt" }
+
+[envs.yazi]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { yazi = "*" }
+exposed = { ya = "ya", yazi = "yazi" }
+
+[envs.jarl]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { jarl = "*" }
+exposed = { jarl = "jarl" }
+
+[envs.air]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { air = "*" }
+exposed = { air = "air" }
+
+[envs.gh]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { gh = "*" }
+exposed = { gh = "gh" }
+
+[envs.gh-dash]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { gh-dash = "*" }
+exposed = { gh-dash = "gh-dash" }
+
+[envs.bacon]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { bacon = "*" }
+exposed = { bacon = "bacon" }
+
+[envs.eza]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { eza = "*" }
+exposed = { eza = "eza" }
+
+[envs.just]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { just = "*" }
+exposed = { just = "just" }
+
+[envs.direnv]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { direnv = "*" }
+exposed = { direnv = "direnv" }
+
+[envs.bat]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { bat = "*" }
+exposed = { bat = "bat" }
+
+[envs.resvg]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { resvg = "*" }
+exposed = { resvg = "resvg" }
+
+[envs.dust]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { dust = "*" }
+exposed = { dust = "dust" }
+
+[envs.ghostty]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { ghostty = "*" }
+exposed = { ghostty = "ghostty" }
+shortcuts = ["ghostty"]
+
+[envs.ripgrep]
+channels = ["conda-forge"]
+dependencies = { ripgrep = "*" }
+exposed = { rg = "rg" }
+
+[envs.fd-find]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { fd-find = "*" }
+exposed = { fd = "fd" }
+
+[envs.cocogitto]
+channels = ["https://prefix.dev/brads-forge"]
+dependencies = { cocogitto = "*" }
+exposed = { cog = "cog" }
+
+[envs.rustup]
+channels = ["https://prefix.dev/brads-forge"]
+dependencies = { rustup = "*" }
+exposed = { rustup = "rustup", rustup-init = "rustup-init" }
