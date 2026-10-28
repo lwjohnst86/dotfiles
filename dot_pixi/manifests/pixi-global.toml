@@ -195,3 +195,18 @@ exposed = { rustup = "rustup", rustup-init = "rustup-init" }
 channels = ["conda-forge"]
 dependencies = { xclip = "*" }
 exposed = { xclip = "xclip", xclip-copyfile = "xclip-copyfile", xclip-cutfile = "xclip-cutfile", xclip-pastefile = "xclip-pastefile" }
+
+[envs.sccache]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { sccache = "*" }
+exposed = { sccache = "sccache" }
+
+[envs.r-base]
+channels = ["https://prefix.dev/conda-forge"]
+dependencies = { r-base = "*" }
+exposed = { R = "R", Rscript = "Rscript" }
+
+[envs.quarto-cli]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { quarto-cli = "*" }
+exposed = { quarto = "quarto" }

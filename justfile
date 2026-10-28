@@ -6,7 +6,7 @@ update:
   sudo apt update
   sudo apt upgrade -y
   sudo apt autoremove -y
-  pixi global sync
+  pixi global update
   flatpak update
   ya pkg upgrade
 
@@ -14,14 +14,10 @@ update:
 install-system-packages:
   # Install packages only available through apt not Devbox
   sudo apt install -y build-essential libpoppler-glib-dev libssl-dev \
-      libcurl4-openssl-dev 7zip mesa-utils ghostty gnome-tweaks gnome-shell-extension-manager \
-      gnome-shell-extensions flatpak gnome-software-plugin-flatpak git curl libxml2-dev \
+      libcurl4-openssl-dev 7zip mesa-utils gnome-tweaks gnome-shell-extension-manager \
+      gnome-shell-extensions flatpak gnome-software-plugin-flatpak curl libxml2-dev \
       cmake pandoc libgit2-dev libsecret-1-dev libfribidi-dev libharfbuzz-dev libpoppler-cpp-dev \
       libarchive-dev
-
-# Install Rust specific tools (not in Devbox)
-install-cargo:
-  cargo install --locked sccache
 
 # Install R normally (doesn't work well in Devbox)
 install-r:
