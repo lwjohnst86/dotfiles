@@ -19,7 +19,11 @@ install-system-packages:
       cmake libgit2-dev libsecret-1-dev libfribidi-dev libharfbuzz-dev libpoppler-cpp-dev \
       libarchive-dev
 
-# Install R normally
+# Install Rust manually (doesn't work well in Pixi)
+install-rust:
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Install R normally (doesn't work well in Pixi)
 install-r:
   # install two helper packages we need
   sudo apt install software-properties-common dirmngr
@@ -40,7 +44,7 @@ install-gui-packages:
   flatpak install flathub com.brave.Browser org.telegram.desktop \
     com.github.xournalpp.xournalpp org.jabref.jabref
 
-# Install latest Positron
+# Install latest Positron (not available elsewhere)
 install-positron:
   #!/usr/bin/env bash
   POSITRON_VERSION=$(echo $(curl -s "https://api.github.com/repos/posit-dev/positron/releases/latest" | grep -Po '"tag_name": "\K[0-9.-]+'))

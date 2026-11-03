@@ -123,6 +123,3 @@ autoload -Uz compinit
 compinit -i
 # End of lines added by compinstall
 
-# For direnv
-eval "$(direnv hook zsh)"
-
