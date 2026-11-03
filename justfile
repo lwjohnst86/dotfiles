@@ -12,16 +12,11 @@ update:
 
 # Install system packages (not available in or can't be in Pixi)
 install-system-packages:
-  # Install packages only available through apt not Devbox
   sudo apt install -y build-essential libpoppler-glib-dev libssl-dev \
       libcurl4-openssl-dev 7zip mesa-utils gnome-tweaks gnome-shell-extension-manager \
       gnome-shell-extensions flatpak gnome-software-plugin-flatpak curl libxml2-dev \
       cmake libgit2-dev libsecret-1-dev libfribidi-dev libharfbuzz-dev libpoppler-cpp-dev \
       libarchive-dev
-
-# Install Rust manually (doesn't work well in Pixi)
-install-rust:
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Install R normally (doesn't work well in Pixi)
 install-r:
@@ -61,6 +56,7 @@ set-zsh:
 
 # Finish last setup steps
 finish-setup: 
+  rustup-init
   rustup default stable
   # Update font list
   sudo fc-cache -f -v
