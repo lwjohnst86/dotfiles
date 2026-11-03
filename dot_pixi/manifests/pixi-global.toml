@@ -85,11 +85,6 @@ channels = ["https://prefix.dev/conda-forge"]
 dependencies = { prek = "*" }
 exposed = { prek = "prek" }
 
-[envs.rust]
-channels = ["https://prefix.dev/conda-forge"]
-dependencies = { rust = "*" }
-exposed = { cargo = "cargo", cargo-clippy = "cargo-clippy", cargo-fmt = "cargo-fmt", clippy-driver = "clippy-driver", rust-gdb = "rust-gdb", rust-gdbgui = "rust-gdbgui", rust-lldb = "rust-lldb", rustc = "rustc", rustdoc = "rustdoc", rustfmt = "rustfmt" }
-
 [envs.lsd]
 channels = ["https://prefix.dev/github-releases"]
 dependencies = { lsd = "*" }
@@ -144,11 +139,6 @@ exposed = { eza = "eza" }
 channels = ["https://prefix.dev/conda-forge"]
 dependencies = { just = "*" }
 exposed = { just = "just" }
-
-[envs.direnv]
-channels = ["https://prefix.dev/conda-forge"]
-dependencies = { direnv = "*" }
-exposed = { direnv = "direnv" }
 
 [envs.bat]
 channels = ["https://prefix.dev/conda-forge"]
