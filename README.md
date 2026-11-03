@@ -4,6 +4,12 @@ This repository contains my configuration files for all the tools I use.
 
 ## Installing
 
+Install curl and Git:
+
+```bash
+sudo apt install curl git
+```
+
 Install chezmoi for managing the dot-files.
 
 ```bash
@@ -16,18 +22,18 @@ Install Pixi to manage software installs.
 curl -fsSL https://pixi.sh/install.sh | sh
 ```
 
-Install Oh My ZSH
-
-```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
 ## Setting up
 
 Install all software listed in the Pixi manifest.
 
 ```bash
 pixi global sync
+```
+
+Then install Oh My ZSH:
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 Then run these just recipes:
@@ -37,6 +43,15 @@ just install-system-packages
 just install-gui-packages
 just set-zsh
 just finish-setup
+just update
+```
+
+If you need to use R and Positron to build R packages from source, use these
+just recipes:
+
+```bash
+just install-r 
+just install-positron
 ```
 
 Set up keybindings for easier navigation, etc within Ubuntu:
@@ -45,4 +60,4 @@ Set up keybindings for easier navigation, etc within Ubuntu:
 - `Alt-Space` to switch screens/applications
 
 The LazyVim configuration was started with the [starter
-repo](https://github.com/LazyVim/starter ~/.config/nvim).
+repo](https://github.com/LazyVim/starter).

@@ -14,22 +14,9 @@ update:
 install-system-packages:
   sudo apt install -y build-essential libpoppler-glib-dev libssl-dev \
       libcurl4-openssl-dev 7zip mesa-utils gnome-tweaks gnome-shell-extension-manager \
-      gnome-shell-extensions flatpak gnome-software-plugin-flatpak curl libxml2-dev \
+      gnome-shell-extensions flatpak gnome-software-plugin-flatpak libxml2-dev \
       cmake libgit2-dev libsecret-1-dev libfribidi-dev libharfbuzz-dev libpoppler-cpp-dev \
       libarchive-dev
-
-# Install R normally (doesn't work well in Pixi)
-install-r:
-  # install two helper packages we need
-  sudo apt install software-properties-common dirmngr
-  # add the signing key (by Michael Rutter) for these repos
-  # To verify key, run gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc 
-  # Fingerprint: E298A3A825C0D65DFD57CBB651716619E084DAB9
-  wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
-  # add the repo from CRAN -- lsb_release adjusts to 'noble' or 'jammy' or ... as needed
-  sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
-  # install R itself
-  sudo apt install r-base r-base-dev
 
 # Install GUI apps
 install-gui-packages:
@@ -38,15 +25,6 @@ install-gui-packages:
   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub com.brave.Browser org.telegram.desktop \
     com.github.xournalpp.xournalpp org.jabref.jabref
-
-# Install latest Positron (not available elsewhere)
-install-positron:
-  #!/usr/bin/env bash
-  POSITRON_VERSION=$(echo $(curl -s "https://api.github.com/repos/posit-dev/positron/releases/latest" | grep -Po '"tag_name": "\K[0-9.-]+'))
-  POSITRON_DEB="Positron-$POSITRON_VERSION-x64.deb"
-  wget -O $POSITRON_DEB "https://cdn.posit.co/positron/releases/deb/x86_64/$POSITRON_DEB"
-  sudo dpkg -i $POSITRON_DEB
-  rm -f $POSITRON_DEB
 
 # Set zsh to default shell
 set-zsh:
@@ -64,4 +42,26 @@ finish-setup:
 # Remove any packages not used (from fresh OS)
 remove-old-packages:
   sudo apt remove firefox thunderbird
+
+# Install R normally (doesn't work well in Pixi)
+install-r:
+  # install two helper packages we need
+  sudo apt install software-properties-common dirmngr
+  # add the signing key (by Michael Rutter) for these repos
+  # To verify key, run gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc 
+  # Fingerprint: E298A3A825C0D65DFD57CBB651716619E084DAB9
+  wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+  # add the repo from CRAN -- lsb_release adjusts to 'noble' or 'jammy' or ... as needed
+  sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
+  # install R itself
+  sudo apt install r-base r-base-dev
+
+# Install latest Positron (not available elsewhere)
+install-positron:
+  #!/usr/bin/env bash
+  POSITRON_VERSION=$(echo $(curl -s "https://api.github.com/repos/posit-dev/positron/releases/latest" | grep -Po '"tag_name": "\K[0-9.-]+'))
+  POSITRON_DEB="Positron-$POSITRON_VERSION-x64.deb"
+  wget -O $POSITRON_DEB "https://cdn.posit.co/positron/releases/deb/x86_64/$POSITRON_DEB"
+  sudo dpkg -i $POSITRON_DEB
+  rm -f $POSITRON_DEB
 
