@@ -23,7 +23,7 @@ install-gui-packages:
   # Snap specific ones
   sudo snap install vivaldi bitwarden proton-vpn
   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-  flatpak install flathub com.brave.Browser org.telegram.desktop \
+  flatpak install --noninteractive flathub com.brave.Browser org.telegram.desktop \
     com.github.xournalpp.xournalpp org.jabref.jabref
 
 # Set zsh to default shell
@@ -42,6 +42,7 @@ finish-setup:
 # Remove any packages not used (from fresh OS)
 remove-old-packages:
   sudo apt remove firefox thunderbird
+  sudo snap remove firefox thunderbird
 
 # Install R normally (doesn't work well in Pixi)
 install-r:

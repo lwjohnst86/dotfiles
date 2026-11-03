@@ -30,15 +30,10 @@ Install all software listed in the Pixi manifest.
 pixi global sync
 ```
 
-Then install Oh My ZSH:
+Then change to the chezmoi directory and run these just recipes:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-Then run these just recipes:
-
-```bash
+cd ~/.local/share/chezmoi/
 just install-system-packages
 just install-gui-packages
 just set-zsh
@@ -54,7 +49,10 @@ just install-r
 just install-positron
 ```
 
-Set up keybindings for easier navigation, etc within Ubuntu:
+Finally, restart the computer so things can get re-connected.
+
+Set up keybindings for easier navigation, etc within Ubuntu. For example, for
+using Glove80 keyboard, these keybindings help:
 
 - `Ctrl-Space` to close window
 - `Alt-Space` to switch screens/applications
