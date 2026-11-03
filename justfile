@@ -35,7 +35,7 @@ install-r:
 # Install GUI apps
 install-gui-packages:
   # Snap specific ones
-  sudo snap install vivaldi bitwarden proton-mail proton-vpn
+  sudo snap install vivaldi bitwarden proton-vpn
   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub com.brave.Browser org.telegram.desktop \
     com.github.xournalpp.xournalpp org.jabref.jabref
