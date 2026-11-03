@@ -165,12 +165,6 @@ channels = ["https://prefix.dev/conda-forge"]
 dependencies = { dust = "*" }
 exposed = { dust = "dust" }
 
-[envs.ghostty]
-channels = ["https://prefix.dev/conda-forge"]
-dependencies = { ghostty = "*" }
-exposed = { ghostty = "ghostty" }
-shortcuts = ["ghostty"]
-
 [envs.ripgrep]
 channels = ["conda-forge"]
 dependencies = { ripgrep = "*" }
@@ -201,11 +195,6 @@ channels = ["https://prefix.dev/conda-forge"]
 dependencies = { sccache = "*" }
 exposed = { sccache = "sccache" }
 
-[envs.r-base]
-channels = ["https://prefix.dev/conda-forge"]
-dependencies = { r-base = "*" }
-exposed = { R = "R", Rscript = "Rscript" }
-
 [envs.quarto-cli]
 channels = ["https://prefix.dev/github-releases"]
 dependencies = { quarto-cli = "*" }
@@ -215,3 +204,19 @@ exposed = { quarto = "quarto" }
 channels = ["conda-forge"]
 dependencies = { pandoc = "*" }
 exposed = { pandoc = "pandoc", pandoc-lua = "pandoc-lua", pandoc-server = "pandoc-server" }
+
+[envs.cargo-dist]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { cargo-dist = "*" }
+exposed = { dist = "dist" }
+
+[envs.harper]
+channels = ["https://prefix.dev/github-releases"]
+dependencies = { harper = "*" }
+exposed = { harper-cli = "harper-cli" }
+
+[envs.ghostty]
+channels = ["conda-forge"]
+dependencies = { ghostty = "*" }
+exposed = { ghostty = "ghostty" }
+shortcuts = ["ghostty"]
