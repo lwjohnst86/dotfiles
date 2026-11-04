@@ -17,6 +17,7 @@ install-system-packages:
       gnome-shell-extensions flatpak gnome-software-plugin-flatpak libxml2-dev \
       cmake libgit2-dev libsecret-1-dev libfribidi-dev libharfbuzz-dev libpoppler-cpp-dev \
       libarchive-dev
+  uv tool install td-watson
 
 # Install GUI apps
 install-gui-packages:
