@@ -197,7 +197,7 @@ exposed = { pandoc = "pandoc", pandoc-lua = "pandoc-lua", pandoc-server = "pando
 
 [envs.cargo-dist]
 channels = ["https://prefix.dev/github-releases"]
-dependencies = { cargo-dist = "*" }
+dependencies = { cargo-dist = "0.34.0.*" }
 exposed = { dist = "dist" }
 
 [envs.harper]
@@ -210,3 +210,8 @@ channels = ["conda-forge"]
 dependencies = { ghostty = "*" }
 exposed = { ghostty = "ghostty" }
 shortcuts = ["ghostty"]
+
+[envs.maturin]
+channels = ["conda-forge"]
+dependencies = { maturin = "*" }
+exposed = { maturin = "maturin" }
